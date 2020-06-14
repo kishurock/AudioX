@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlOne"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#292727"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="6dp">
+
+        <ImageView
+            android:id="@+id/imgSongImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/one" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtSongName"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Song's Name"
+        android:textColor="@color/White"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSongName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Artist's Name"
+        android:textColor="@color/White"
+        android:textSize="9dp" />
+
+
+</RelativeLayout>
